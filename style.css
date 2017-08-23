@@ -1,0 +1,21 @@
+.starting-position {
+    width: 80%;
+    position: absolute;
+}
+
+body {
+    background-color: blue;
+}
+
+.img-size {
+    width: 150px;
+    height: 150px;
+}
+
+.user2 {
+    top: 33%;
+}
+
+.user3 {
+    top: 66%;
+}
