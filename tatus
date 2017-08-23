@@ -1,0 +1,509 @@
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex 18cc760..621c8d4 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -2,7 +2,10 @@[m
+ <project version="4">[m
+   <component name="ChangeListManager">[m
+     <list default="true" id="b15cb6a0-97bf-49f0-98a0-8809bc04fb01" name="Default" comment="">[m
+[31m-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />[m
+[32m+[m[32m      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />[m
+     </list>[m
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m
+     <option name="TRACKING_ENABLED" value="true" />[m
+[36m@@ -12,12 +15,12 @@[m
+     <option name="LAST_RESOLUTION" value="IGNORE" />[m
+   </component>[m
+   <component name="FileEditorManager">[m
+[31m-    <leaf>[m
+[32m+[m[32m    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">[m
+       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/index.html">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="348">[m
+[31m-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />[m
+[32m+[m[32m            <state relative-caret-position="222">[m
+[32m+[m[32m              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+[36m@@ -26,10 +29,17 @@[m
+       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">[m
+         <entry file="file://$PROJECT_DIR$/app.js">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="306">[m
+[31m-              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />[m
+[32m+[m[32m            <state relative-caret-position="146">[m
+[32m+[m[32m              <caret line="128" column="23" lean-forward="false" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="23" />[m
+               <folding>[m
+[31m-                <marker date="1503510907835" expanded="true" signature="38:204" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="1363:1454" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="1480:1520" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="1724:1799" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="1825:1982" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="1873:1967" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="2008:2121" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="2198:2317" ph="..." />[m
+[32m+[m[32m                <marker date="1503528437166" expanded="true" signature="2347:2464" ph="..." />[m
+               </folding>[m
+             </state>[m
+           </provider>[m
+[36m@@ -38,8 +48,8 @@[m
+       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/style.css">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="342">[m
+[31m-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />[m
+[32m+[m[32m            <state relative-caret-position="326">[m
+[32m+[m[32m              <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+[36m@@ -56,14 +66,22 @@[m
+       </list>[m
+     </option>[m
+   </component>[m
+[32m+[m[32m  <component name="FindInProjectRecents">[m
+[32m+[m[32m    <findStrings>[m
+[32m+[m[32m      <find>con</find>[m
+[32m+[m[32m      <find>click</find>[m
+[32m+[m[32m      <find>start</find>[m
+[32m+[m[32m      <find>console</find>[m
+[32m+[m[32m    </findStrings>[m
+[32m+[m[32m  </component>[m
+   <component name="Git.Settings">[m
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m
+   </component>[m
+   <component name="IdeDocumentHistory">[m
+     <option name="CHANGED_PATHS">[m
+       <list>[m
+[31m-        <option value="$PROJECT_DIR$/index.html" />[m
+         <option value="$PROJECT_DIR$/style.css" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/index.html" />[m
+         <option value="$PROJECT_DIR$/app.js" />[m
+       </list>[m
+     </option>[m
+[36m@@ -103,8 +121,8 @@[m
+       <foldersAlwaysOnTop value="true" />[m
+     </navigator>[m
+     <panes>[m
+[31m-      <pane id="Scratches" />[m
+       <pane id="Scope" />[m
+[32m+[m[32m      <pane id="Scratches" />[m
+       <pane id="ProjectPane">[m
+         <subPane>[m
+           <expand>[m
+[36m@@ -126,6 +144,7 @@[m
+     <property name="WebServerToolWindowFactoryState" value="false" />[m
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />[m
+     <property name="list.type.of.created.stylesheet" value="CSS" />[m
+[32m+[m[32m    <property name="last_opened_file_path" value="$PROJECT_DIR$" />[m
+   </component>[m
+   <component name="RunDashboard">[m
+     <option name="ruleStates">[m
+[36m@@ -150,12 +169,13 @@[m
+       <option name="number" value="Default" />[m
+       <option name="presentableId" value="Default" />[m
+       <updated>1503505574500</updated>[m
+[31m-      <workItem from="1503505575923" duration="5469000" />[m
+[32m+[m[32m      <workItem from="1503505575923" duration="16490000" />[m
+[32m+[m[32m      <workItem from="1503525367107" duration="3069000" />[m
+     </task>[m
+     <servers />[m
+   </component>[m
+   <component name="TimeTrackingManager">[m
+[31m-    <option name="totallyTimeSpent" value="5469000" />[m
+[32m+[m[32m    <option name="totallyTimeSpent" value="19559000" />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+     <frame x="73" y="44" width="1277" height="599" extended-state="0" />[m
+[36m@@ -163,21 +183,21 @@[m
+     <layout>[m
+       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24902114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />[m
+[31m-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />[m
+[31m-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />[m
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />[m
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />[m
+[32m+[m[32m      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />[m
+     </layout>[m
+   </component>[m
+   <component name="TypeScriptGeneratedFilesManager">[m
+[36m@@ -193,26 +213,66 @@[m
+   <component name="editorHistoryManager">[m
+     <entry file="file://$PROJECT_DIR$/index.html">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="348">[m
+[31m-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />[m
+[32m+[m[32m        <state relative-caret-position="360">[m
+[32m+[m[32m          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="22" selection-end-column="25" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/style.css">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="1080">[m
+[32m+[m[32m          <caret line="60" column="12" lean-forward="false" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/app.js">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="378">[m
+[32m+[m[32m          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1363:1454" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1480:1520" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1724:1799" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1825:1982" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1873:1967" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="2008:2121" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="2198:2317" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="2347:2464" ph="..." />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+     <entry file="file://$PROJECT_DIR$/style.css">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="342">[m
+[31m-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />[m
+[32m+[m[32m        <state relative-caret-position="326">[m
+[32m+[m[32m          <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/index.html">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="222">[m
+[32m+[m[32m          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+     <entry file="file://$PROJECT_DIR$/app.js">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="306">[m
+[31m-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />[m
+[32m+[m[32m        <state relative-caret-position="146">[m
+[32m+[m[32m          <caret line="128" column="23" lean-forward="false" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="23" />[m
+           <folding>[m
+[31m-            <marker date="1503510907835" expanded="true" signature="38:204" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1363:1454" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1480:1520" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1724:1799" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1825:1982" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="1873:1967" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="2008:2121" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="2198:2317" ph="..." />[m
+[32m+[m[32m            <marker date="1503528437166" expanded="true" signature="2347:2464" ph="..." />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+[1mdiff --git a/app.js b/app.js[m
+[1mindex 4a6f093..3a7c2d4 100644[m
+[1m--- a/app.js[m
+[1m+++ b/app.js[m
+[36m@@ -1,31 +1,141 @@[m
+ $(document).ready(function() {[m
+[31m-    // $(document).keyup(function(event) {[m
+[31m-    //     if (event.keyCode === 70) {[m
+[31m-    //         $(".starting-position").animate({left: "+=24%"}, 1);[m
+[31m-    //     }[m
+[31m-    // });[m
+[31m-    let imageWidths = 150[m
+[31m-    // $(".user1").animate({left: "+=24%"}, 1);[m
+[31m-    // console.log($(".user1").position().left+imageWidths);[m
+[31m-    // console.log($(window).width());[m
+[31m-    while ($(".starting-position").position().left+imageWidths < $(window).width()) {[m
+[31m-        let userOneMath = Math.random();[m
+[31m-        console.log(userOneMath);[m
+[31m-        let userTwoMath = Math.random();[m
+[31m-        console.log(userTwoMath);[m
+[31m-        let userThreeMath = Math.random();[m
+[31m-        console.log(userThreeMath);[m
+[31m-        if (userOneMath > userTwoMath && userOneMath > userThreeMath) {[m
+[31m-            console.log("h");[m
+[31m-            $(".user1").animate({left: "+=24%"}, 1)[m
+[31m-        };[m
+[31m-        if (userTwoMath > userOneMath && userTwoMath > userThreeMath) {[m
+[31m-            console.log("j");[m
+[31m-            $(".user2").animate({left: "+=24%"}, 1)[m
+[31m-        };[m
+[31m-        if (userThreeMath > userTwoMath && userThreeMath > userTwoMath) {[m
+[31m-            console.log("k");[m
+[31m-            $(".user3").animate({left: "+=24%"}, 1)[m
+[31m-        };[m
+[31m-    }[m
+[32m+[m
+[32m+[m[32m    let characters = [[m
+[32m+[m[32m        {[m
+[32m+[m[32m            name: "Mario",[m
+[32m+[m[32m            speed: 6,[m
+[32m+[m[32m            sprite: "images/mario.gif"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m            name: "Pokemon",[m
+[32m+[m[32m            speed: 5,[m
+[32m+[m[32m            sprite: "images/pokemon.gif"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m            name: "Sonic",[m
+[32m+[m[32m            speed: 7,[m
+[32m+[m[32m            sprite: "images/sonic.gif"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m            name: "Homer",[m
+[32m+[m[32m            speed: 3,[m
+[32m+[m[32m            sprite: "images/homer.gif"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m            name: "Koolaid",[m
+[32m+[m[32m            speed: 2,[m
+[32m+[m[32m            sprite: "images/koolaid.gif"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m            name: "Patrick",[m
+[32m+[m[32m            speed: 4,[m
+[32m+[m[32m            sprite: "images/patrickstar.gif"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m            name: "Kirby",[m
+[32m+[m[32m            speed: 4,[m
+[32m+[m[32m            sprite: "images/kirby.gif"[m
+[32m+[m[32m        }[m
+[32m+[m[32m    ];[m
+[32m+[m
+[32m+[m[32m    let imageWidths = 500;[m
+[32m+[m[32m    let userOnePer = 5;[m
+[32m+[m[32m    let userTwoPer = 5;[m
+[32m+[m[32m    let userThreePer = 5;[m
+[32m+[m[32m    let counter = 0;[m
+[32m+[m[32m    let randomInterval1 = Math.ceil(Math.random()*10);[m
+[32m+[m[32m    let randomInterval2 = Math.ceil(Math.random()*10);[m
+[32m+[m[32m    let gameStarted = false;[m
+[32m+[m
+[32m+[m[32m    function getImgHTML(character, index) {[m
+[32m+[m[32m        return `<img class = "start-user${index} img-size col-sm-4" src="${characters[index].sprite}">`[m
+[32m+[m[32m    };[m
+[32m+[m
+[32m+[m[32m    let charsHTML = characters.map(getImgHTML).join("")[m
+[32m+[m
+[32m+[m[32m    $('body').append(`[m
+[32m+[m[32m        <div class="row">[m
+[32m+[m[32m            <h1 class=" start-screen col-sm-12">Select your character!</h1>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="row">[m
+[32m+[m[32m            ${charsHTML}[m
+[32m+[m[32m        </div>`[m
+[32m+[m[32m    )[m
+[32m+[m
+[32m+[m[32m    $('.start-user0, .start-user1, .start-user2, .start-user3, ' +[m
+[32m+[m[32m        '.start-user4, .start-user5, .start-user6').on("click", function() {[m
+[32m+[m[32m        $('body').html([m
+[32m+[m
+[32m+[m[32m        `<div class="row">[m
+[32m+[m[32m            <h1 class="announce col-sm-12">Racing Game</h1>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="row">[m
+[32m+[m[32m            <div class="col-sm-12 text-center">[m
+[32m+[m[32m            <button type="button" class="btn btn-primary start">Start</button>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="row">[m
+[32m+[m[32m            <img class = "user1 starting-position img-size col-sm-12" src="images/sonic.gif">[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <!--<div class = "w-100"></div>-->[m
+[32m+[m[32m            <div class="row">[m
+[32m+[m[32m            <img class = "user2 starting-position img-size row col-sm-12" src="images/pokemon.gif">[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="row">[m
+[32m+[m[32m            <img class = "user3 starting-position img-size row col-sm-12" src="images/mario.gif">[m
+[32m+[m[32m            </div>`[m
+[32m+[m
+[32m+[m[32m        )[m
+[32m+[m[32m    });[m
+[32m+[m
+[32m+[m[32m    let game_logic = function() {[m
+[32m+[m
+[32m+[m[32m        setInterval(function () {[m
+[32m+[m[32m                counter += 1;[m
+[32m+[m[32m                let userOneMath = Math.random();[m
+[32m+[m[32m                let userTwoMath = Math.random();[m
+[32m+[m[32m                let userThreeMath = Math.random();[m
+[32m+[m
+[32m+[m[32m                if ($(".user1").position().left > $(window).width() - imageWidths) {[m
+[32m+[m[32m                    $(".announce").html("Sonic has won!");[m
+[32m+[m[32m                    clearInterval(game_logic);[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m[32m                if ($(".user2").position().left > $(window).width() - imageWidths) {[m
+[32m+[m[32m                    $(".announce").html("Blue has won!");[m
+[32m+[m[32m                    clearInterval(game_logic);[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m[32m                if ($(".user3").position().left > $(window).width() - imageWidths) {[m
+[32m+[m[32m                    $(".announce").html("Mario has won!");[m
+[32m+[m[32m                    clearInterval(game_logic);[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m[32m                if (userOneMath > userTwoMath && userOneMath > userThreeMath) {[m
+[32m+[m[32m                    $(".user1").animate({left: "+=" + userOnePer + "%"}, 1);[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m
+[32m+[m[32m                if (userTwoMath > userOneMath && userTwoMath > userThreeMath) {[m
+[32m+[m[32m                    $(".user2").animate({left: "+=" + userTwoPer + "%"}, 1)[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m
+[32m+[m[32m                if (userThreeMath > userTwoMath && userThreeMath > userTwoMath) {[m
+[32m+[m[32m                    $(".user3").animate({left: "+=" + userThreePer + "%"}, 1)[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m[32m            else {[m
+[32m+[m[32m                console.log('else');[m
+[32m+[m[32m                clearInterval(game_logic);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }, 500);[m
+[32m+[m[32m    };[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    $(document).on("click", ".start", function() {[m
+[32m+[m[32m        game_logic();[m
+[32m+[m[32m        console.log("hello");[m
+[32m+[m[32m    });[m
+[32m+[m
+ });[m
+\ No newline at end of file[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 342f9f9..66302e3 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -14,15 +14,23 @@[m
+         <script src="app.js"></script>[m
+     </head>[m
+     <body class = "container-fluid">[m
+[31m-        <div class="row">[m
+[31m-            <img class = "user1 starting-position img-size col-sm-12" src="images/cloud.png">[m
+[31m-        </div>[m
+[31m-        <!--<div class = "w-100"></div>-->[m
+[31m-        <div class="row">[m
+[31m-            <img class = "user2 starting-position img-size row col-sm-12" src="images/mario.jpg">[m
+[31m-        </div>[m
+[31m-        <div class="row">[m
+[31m-            <img class = "user3 starting-position img-size row col-sm-12" src="images/mario.jpg">[m
+[31m-        </div>[m
+[32m+[m[32m        <!--<div class="row">-->[m
+[32m+[m[32m            <!--<h1 class="announce col-sm-12">Racing Game</h1>-->[m
+[32m+[m[32m        <!--</div>-->[m
+[32m+[m[32m        <!--<div class="row">-->[m
+[32m+[m[32m            <!--<div class="col-sm-12 text-center">-->[m
+[32m+[m[32m                <!--<button type="button" class="btn btn-primary booster">Booster Gold!</button>-->[m
+[32m+[m[32m            <!--</div>-->[m
+[32m+[m[32m        <!--</div>-->[m
+[32m+[m[32m        <!--<div class="row">-->[m
+[32m+[m[32m            <!--<img class = "user1 starting-position img-size col-sm-12" src="images/sonic.gif">-->[m
+[32m+[m[32m        <!--</div>-->[m
+[32m+[m[32m        <!--&lt;!&ndash;<div class = "w-100"></div>&ndash;&gt;-->[m
+[32m+[m[32m        <!--<div class="row">-->[m
+[32m+[m[32m            <!--<img class = "user2 starting-position img-size row col-sm-12" src="images/pokemon.gif">-->[m
+[32m+[m[32m        <!--</div>-->[m
+[32m+[m[32m        <!--<div class="row">-->[m
+[32m+[m[32m            <!--<img class = "user3 starting-position img-size row col-sm-12" src="images/mario.gif">-->[m
+[32m+[m[32m        <!--</div>-->[m
+     </body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/style.css b/style.css[m
+[1mindex d38fdac..1c41239 100644[m
+[1m--- a/style.css[m
+[1m+++ b/style.css[m
+[36m@@ -12,10 +12,59 @@[m [mbody {[m
+     height: 150px;[m
+ }[m
+ [m
+[32m+[m[32m.user1 {[m
+[32m+[m[32m    top: 25%;[m
+[32m+[m[32m}[m
+[32m+[m
+ .user2 {[m
+[31m-    top: 33%;[m
+[32m+[m[32m    top: 50%;[m
+ }[m
+ [m
+ .user3 {[m
+[31m-    top: 66%;[m
+[32m+[m[32m    top: 75%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.announce {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    top: 0%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.booster {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-screen {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user0 {[m
+[32m+[m[32m    left: 20%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user1 {[m
+[32m+[m[32m    left: 20%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user2 {[m
+[32m+[m[32m    left: 20%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user3 {[m
+[32m+[m[32m    left: 20%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user4 {[m
+[32m+[m[32m    left: 20%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user5 {[m
+[32m+[m[32m    left: 20%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user6 {[m
+[32m+[m[32m    left: 20%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.start-user7 {[m
+[32m+[m[32m    left: 20%;[m
+ }[m
+\ No newline at end of file[m

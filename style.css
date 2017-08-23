@@ -12,10 +12,59 @@ body {
     height: 150px;
 }
 
+.user1 {
+    top: 25%;
+}
+
 .user2 {
-    top: 33%;
+    top: 50%;
 }
 
 .user3 {
-    top: 66%;
+    top: 75%;
+}
+
+.announce {
+    text-align: center;
+    top: 0%;
+}
+
+.booster {
+    text-align: center;
+}
+
+.start-screen {
+    text-align: center;
+}
+
+.start-user0 {
+    left: 20%;
+}
+
+.start-user1 {
+    left: 20%;
+}
+
+.start-user2 {
+    left: 20%;
+}
+
+.start-user3 {
+    left: 20%;
+}
+
+.start-user4 {
+    left: 20%;
+}
+
+.start-user5 {
+    left: 20%;
+}
+
+.start-user6 {
+    left: 20%;
+}
+
+.start-user7 {
+    left: 20%;
 }
