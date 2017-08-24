@@ -1,6 +1,7 @@
 .starting-position {
     width: 80%;
     position: absolute;
+    left: 0%;
 }
 
 body {
@@ -67,4 +68,12 @@ body {
 
 .start-user7 {
     left: 20%;
+}
+
+.speed-style {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }

@@ -3,42 +3,42 @@ $(document).ready(function() {
     let characters = [
         {
             name: "Koolaid",
-            speed: 1,
+            speed: 10,
             sprite: "images/koolaid.gif"
         },
         {
             name: "Homer",
-            speed: 2,
+            speed: 11,
             sprite: "images/homer.gif"
         },
         {
             name: "Pokemon",
-            speed: 3,
+            speed: 12,
             sprite: "images/pokemon.gif"
         },
         {
             name: "Patrick",
-            speed: 4,
+            speed: 13,
             sprite: "images/patrickstar.gif"
         },
         {
             name: "Kirby",
-            speed: 5,
+            speed: 14,
             sprite: "images/kirby.gif"
         },
         {
             name: "Mario",
-            speed: 6,
+            speed: 15,
             sprite: "images/mario.gif"
         },
         {
             name: "Charizard",
-            speed: 7,
+            speed: 16,
             sprite: "images/charizard.gif"
         },
         {
             name: "Sonic",
-            speed: 8,
+            speed: 20,
             sprite: "images/sonic.gif"
         }
     ];
@@ -69,120 +69,57 @@ $(document).ready(function() {
     )
 
     //Remembering the user's character and selecting the level 1 characters
-    $('.start-user0, .start-user1, .start-user2, .start-user3, ' +
-        '.start-user4, .start-user5, .start-user6, .start-user7').on("click", function() {
-        for (let i = 0; i < characters.length; i++) {
-            if (characters[i].sprite === $(this).attr("src")) {
-                userOne = characters[i]
-                console.log(userOne);
+    let characterSelect = function() {
+        $('.start-user0, .start-user1, .start-user2, .start-user3, ' +
+            '.start-user4, .start-user5, .start-user6, .start-user7').on("click", function() {
+            for (let i = 0; i < characters.length; i++) {
+                if (characters[i].sprite === $(this).attr("src")) {
+                    userOne = characters[i]
+                    console.log(userOne);
+                }
             }
-        }
-        userTwo = characters[0]
-        userThree = characters[1]
+            userTwo = characters[level - 1];
+            userThree = characters[level];
+            raceScreen(userOne, userTwo, userThree);
+        })
+    };
 
-        //Creating the race screen
+                //Creating the race screen
+    let raceScreen = function(userOne, userTwo, userThree) {
         $('body').html(
             `<div class="row">
-            <h1 class="announce col-sm-12">Racing Game</h1>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center button-parent">
-            <button type="button" class="btn btn-primary start">Start</button>
-        </div>
-        </div>
-        <div class="row lanes">
-            <img class = "user1 starting-position img-size col-sm-12" src="${userOne.sprite}">
+                <h1 class="announce col-sm-12">Racing Game</h1>
+            </div>
+            <div class="row button-parent">
+                    <button type="button" class="btn btn-primary booster col-sm-4">Steroids +3 Speed</button>
+                    <button type="button" class="btn btn-primary start col-sm-4">Start</button>
+                    <button type="button" class="btn btn-primary injure col-sm-4">Injure Opponent -1 Speed</button>
+            </div>
+            <div class="row lanes">
+                <img class = "user1 starting-position img-size col-sm-12" src="${userOne.sprite}">
             </div>
             <div class="row">
-            <img class = "user2 starting-position img-size row col-sm-12" src="${userTwo.sprite}">
+                <img class = "user2 starting-position img-size row col-sm-12" src="${userTwo.sprite}">
             </div>
             <div class="row">
-            <img class = "user3 starting-position img-size row col-sm-12" src="${userThree.sprite}">
+                <img class = "user3 starting-position img-size row col-sm-12" src="${userThree.sprite}">
             </div>`
         );
-    });
-
-    //Setting the page for the next level of characters
-    let nextLevel = function() {
-        if (level > 7) {
-            $('body').html(`<h1>Wow you beat this game!</h1>`)
-        }
-
-        else {
-
-        }
     }
-
-    //Checks for winner, adjusts level accordingly
-    let checkWinner = function() {
-        if ($(".user1").position().left > $(window).width() - imageWidths) {
-            $(".announce").html(`${userOne.name} has won!`);
-            level+= 1
-            return true
-        }
-
-        if ($(".user2").position().left > $(window).width() - imageWidths) {
-            $(".announce").html(`${userTwo.name} has won!`);
-            level = 1;
-            return true
-        }
-
-        if ($(".user3").position().left > $(window).width() - imageWidths) {
-            $(".announce").html(`${userThree.name} has won!`);
-            level = 1
-            return true
-        }
-        return false
-    };
-
-    //movement for the characters
-    let movement = function() {
-        if (userOneMath > userTwoMath && userOneMath > userThreeMath) {
-            $(".user1").animate({left: "+=" + userOne.speed + "%"}, 1);
-        }
-
-
-        if (userTwoMath > userOneMath && userTwoMath > userThreeMath) {
-            $(".user2").animate({left: "+=" + userTwo.speed + "%"}, 1)
-        }
-
-
-        if (userThreeMath > userTwoMath && userThreeMath > userTwoMath) {
-            $(".user3").animate({left: "+=" + userThree.speed + "%"}, 1)
-        };
-    }
-
-    //logic for the game
-    let game_logic = function() {
-        var gameInterval = setInterval(function () {
-            $(".booster").on("click", function() {
-                console.log('h')
-                cheating();
-            })
-            $(document).on("click", ".injure", function() {
-                injuring();
-            })
-            userOneMath = Math.random();
-            userTwoMath = Math.random();
-            userThreeMath = Math.random();
-            if (checkWinner() === true) {
-                clearInterval(gameInterval);
-                nextLevel();
-            };
-            movement();
-
-
-        }, 500);
-    };
 
     let cheating = function() {
         let cheatRandom = Math.random();
+        console.log("cheat")
         if (cheatRandom > .4) {
-            userOne.speed += 3
+            userOne.speed += .1
+        }
+        else if (cheatRandom < .1) {
+            alert("Cheating is not allowed, you must start from the beginning!");
+            location.reload()
         }
         else {
-            alert("Cheating is not allowed, you will need to restart at level 1!")
-            location.reload()
+            userTwo.speed += .1;
+            userThree.speed += .1;
         }
     }
 
@@ -201,20 +138,99 @@ $(document).ready(function() {
         }
         else {
             alert("You were roughed up, -2 speed")
-            userOne.speed -= 2;
+            console.log('h')
+            userOne.speed -= .2;
             if (userOne.speed <1) {
                 userOne.speed = 1
             }
         }
     }
 
+    //Setting the page for the next level of characters
+    let nextLevel = function() {
+        if (level > 7) {
+            $('body').html(`<h1>Wow you beat this game!</h1>`)
+        }
+
+        else {
+            userTwo = characters[level-1];
+            userThree = characters[level];
+            raceScreen(userOne, userTwo, userThree);
+            $(".start-position").css("left", "0%");
+        }
+    }
+
+    //Checks for winner, adjusts level accordingly
+    let checkWinner = function() {
+        if ($(".user1").position().left > $(window).width() - imageWidths) {
+            $(".announce").html(`${userOne.name} has won!`);
+            level+= 1
+            return true
+        }
+
+        if ($(".user2").position().left > $(window).width() - imageWidths) {
+            $(".announce").html(`${userTwo.name} has won!`);
+            level = 1;
+            alert("You have lost, you will need to restart at level 1!");
+            clearInterval(gameInterval);
+        }
+
+        if ($(".user3").position().left > $(window).width() - imageWidths) {
+            $(".announce").html(`${userThree.name} has won!`);
+            level = 1;
+            alert("You have lost, you will need to restart at level 1!");
+        }
+    };
+
+    //movement for the characters
+    let movement = function() {
+        if (userOneMath > userTwoMath && userOneMath > userThreeMath) {
+            $(".user1").animate({left: "+=" + userOne.speed + "%"}, 500, "linear");
+        }
+
+
+        if (userTwoMath > userOneMath && userTwoMath > userThreeMath) {
+            $(".user2").animate({left: "+=" + userTwo.speed + "%"}, 500, "linear")
+        }
+
+
+        if (userThreeMath > userTwoMath && userThreeMath > userTwoMath) {
+            $(".user3").animate({left: "+=" + userThree.speed + "%"}, 500, "linear")
+        };
+    }
+    characterSelect();
+    $(document).on("click", ".injure", function() {
+        injuring();
+    });
+    $(document).on("click", ".booster", function() {
+        cheating();
+    });
+    //logic for the game
+    let game_logic = function() {
+        var gameInterval = setInterval(function () {
+            userOneMath = Math.random();
+            userTwoMath = Math.random();
+            userThreeMath = Math.random();
+            if (checkWinner() === true) {
+                clearInterval(gameInterval);
+                nextLevel();
+            };
+            movement();
+
+
+        }, 50);
+    };
 
     $(document).on("click", ".start", function() {
-        $('.button-parent').html(`<button type="button" class="btn btn-primary booster">Steroids +3 Speed</button>
-<button type="button" class="btn btn-primary injure">Injure Opponent -1 Speed</button>`)
+        $(".button-parent").html(`
+            <ul>
+                <li class="col-sm-4 speed-style">${userOne.name}'s speed: ${Math.ceil(userOne.speed*10)}</li>
+                <li class="col-sm-4 speed-style">${userTwo.name}'s speed: ${Math.ceil(userTwo.speed*10)}</li>
+                <li class="col-sm-4 speed-style">${userThree.name}'s speed: ${Math.ceil(userThree.speed*10)}</li>
+            </ul>`
 
+    )
         game_logic();
-
     });
 
 });
