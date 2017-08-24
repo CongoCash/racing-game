@@ -71,7 +71,7 @@ $(document).ready(function() {
     //Remembering the user's character and selecting the level 1 characters
     let characterSelect = function() {
         $('.start-user0, .start-user1, .start-user2, .start-user3, ' +
-            '.start-user4, .start-user5, .start-user6, .start-user7').on("click", function() {
+            '.start-user4, .start-user5, .start-user6').on("click", function() {
             for (let i = 0; i < characters.length; i++) {
                 if (characters[i].sprite === $(this).attr("src")) {
                     userOne = characters[i]
@@ -111,15 +111,15 @@ $(document).ready(function() {
         let cheatRandom = Math.random();
         console.log("cheat")
         if (cheatRandom > .4) {
-            userOne.speed += .1
+            userOne.speed += 3
         }
         else if (cheatRandom < .1) {
             alert("Cheating is not allowed, you must start from the beginning!");
             location.reload()
         }
         else {
-            userTwo.speed += .1;
-            userThree.speed += .1;
+            userTwo.speed += 1;
+            userThree.speed += 1;
         }
     }
 
@@ -139,7 +139,7 @@ $(document).ready(function() {
         else {
             alert("You were roughed up, -2 speed")
             console.log('h')
-            userOne.speed -= .2;
+            userOne.speed -= 1;
             if (userOne.speed <1) {
                 userOne.speed = 1
             }
@@ -155,47 +155,36 @@ $(document).ready(function() {
         else {
             userTwo = characters[level-1];
             userThree = characters[level];
-            raceScreen(userOne, userTwo, userThree);
-            $(".start-position").css("left", "0%");
+            raceScreen(userOne, userTwo, userThree)
         }
     }
 
     //Checks for winner, adjusts level accordingly
     let checkWinner = function() {
         if ($(".user1").position().left > $(window).width() - imageWidths) {
-            $(".announce").html(`${userOne.name} has won!`);
+            if(userOne.name === "Koolaid") {
+                $("body").css("background-image", "url('images/Kool-aid-man-family-guy.gif')")
+            }
+            alert("You have won!")
             level+= 1
             return true
-        }
-
-        if ($(".user2").position().left > $(window).width() - imageWidths) {
-            $(".announce").html(`${userTwo.name} has won!`);
-            level = 1;
-            alert("You have lost, you will need to restart at level 1!");
-            clearInterval(gameInterval);
-        }
-
-        if ($(".user3").position().left > $(window).width() - imageWidths) {
-            $(".announce").html(`${userThree.name} has won!`);
-            level = 1;
-            alert("You have lost, you will need to restart at level 1!");
         }
     };
 
     //movement for the characters
     let movement = function() {
         if (userOneMath > userTwoMath && userOneMath > userThreeMath) {
-            $(".user1").animate({left: "+=" + userOne.speed + "%"}, 500, "linear");
+            $(".user1").animate({left: "+=" + userOne.speed + "%"}, 1000, "linear");
         }
 
 
         if (userTwoMath > userOneMath && userTwoMath > userThreeMath) {
-            $(".user2").animate({left: "+=" + userTwo.speed + "%"}, 500, "linear")
+            $(".user2").animate({left: "+=" + userTwo.speed + "%"}, 1000, "linear")
         }
 
 
         if (userThreeMath > userTwoMath && userThreeMath > userTwoMath) {
-            $(".user3").animate({left: "+=" + userThree.speed + "%"}, 500, "linear")
+            $(".user3").animate({left: "+=" + userThree.speed + "%"}, 1000, "linear")
         };
     }
     characterSelect();
@@ -214,8 +203,18 @@ $(document).ready(function() {
             if (checkWinner() === true) {
                 clearInterval(gameInterval);
                 nextLevel();
-            };
-            movement();
+            }
+            else if ($(".user2").position().left > $(window).width() - imageWidths ||
+            $(".user3").position().left > $(window).width() - imageWidths) {
+                level = 1;
+                clearInterval(gameInterval);
+                alert("You have lost, you will need to restart at level 1!");
+                location.reload();
+            }
+
+            else {
+                movement();
+            }
 
 
         }, 50);
@@ -224,9 +223,9 @@ $(document).ready(function() {
     $(document).on("click", ".start", function() {
         $(".button-parent").html(`
             <ul>
-                <li class="col-sm-4 speed-style">${userOne.name}'s speed: ${Math.ceil(userOne.speed*10)}</li>
-                <li class="col-sm-4 speed-style">${userTwo.name}'s speed: ${Math.ceil(userTwo.speed*10)}</li>
-                <li class="col-sm-4 speed-style">${userThree.name}'s speed: ${Math.ceil(userThree.speed*10)}</li>
+                <li class="col-sm-4 speed-style">${userOne.name}'s speed: ${Math.ceil(userOne.speed)}</li>
+                <li class="col-sm-4 speed-style">${userTwo.name}'s speed: ${Math.ceil(userTwo.speed)}</li>
+                <li class="col-sm-4 speed-style">${userThree.name}'s speed: ${Math.ceil(userThree.speed)}</li>
             </ul>`
 
     )

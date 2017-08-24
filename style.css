@@ -39,35 +39,35 @@ body {
 }
 
 .start-user0 {
-    left: 20%;
+    left: 5%;
 }
 
 .start-user1 {
-    left: 20%;
+    left: 5%;
 }
 
 .start-user2 {
-    left: 20%;
+    left: 5%;
 }
 
 .start-user3 {
-    left: 20%;
+    left: 5%;
 }
 
 .start-user4 {
-    left: 20%;
+    left: 5%;
 }
 
 .start-user5 {
-    left: 20%;
+    left: 5%;
 }
 
 .start-user6 {
-    left: 20%;
+    left: 5%;
 }
 
 .start-user7 {
-    left: 20%;
+    left: 5%;
 }
 
 .speed-style {
@@ -76,4 +76,11 @@ body {
     color: white;
     text-align: center;
     font-weight: bold;
+}
+
+body {
+    background-image: url("images/final-dest.gif");
+    background-size: cover;
+    background-position: center;
+
 }
